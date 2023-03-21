@@ -18,7 +18,7 @@ class Command(BaseCommand):
 
         # open the file to read it into the database
         base_dir = Path(__file__).resolve().parent.parent.parent.parent
-        with open(str(base_dir) + '/assessment/database/countryandid.csv', newline='') as f:
+        with open(str(base_dir) + '/climate_change/database/countryandid.csv', newline='') as f:
             reader = csv.reader(f, delimiter=",")
             next(reader) # skip the header line
             for row in reader:
