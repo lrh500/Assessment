@@ -18,7 +18,7 @@ def handle(self, *args, **options):
 
     # open the file to read it into the database
     base_dir = Path(__file__).resolve().parent.parent.parent.parent
-    with open(str(base_dir) + '/assessment/database/Pcountry and id .csv', newline='') as f:
+    with open(str(base_dir) + '/assessment/database/country and id .csv', newline='') as f:
         reader = csv.reader(f, delimiter=",")
         next(reader) # skip the header line
         for row in reader:
