@@ -12,7 +12,7 @@ class country_id(models.Model):
 
 class Global_tem(models.Model):
     id = models.BigAutoField(primary_key=True)
-    country = models.ForeignKey('climate_change.country_id',on_delete=models.CASCADE, related_name='Global_tem')
+    country = models.ForeignKey('climate_change.country_id',on_delete=models.CASCADE, related_name='global_tem')
     dt = models.TextField()
     averageTemperature = models.TextField()
     averageTemperatureUncertainty = models.TextField()
