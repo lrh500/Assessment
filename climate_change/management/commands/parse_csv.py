@@ -69,7 +69,7 @@ class Command(BaseCommand):
                 next(reader)
 
 
-            if row[4] is  not '':
+           ''' if row[4] is  not '':
                 bear_temp = row[0]  
                 print(bear_temp)
                 bear = Bear.objects.filter(bearID = bear_temp).first()
@@ -83,6 +83,6 @@ class Command(BaseCommand):
                 longitude = float(row[5]),
                 temperature = float(row[9]),
                 )
-                sighting.save()
+                sighting.save()'''
 
 print("data parsed successfully")
