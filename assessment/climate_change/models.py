@@ -3,8 +3,8 @@ from django.conf import settings
 # Create your models here.
 
 class country_id(models.Model):
-    id = models.BigAutoField(primary_key=True)
-    Country = models.TextField()
+    id = models.IntegerField()
+    country = models.TextField(primary_key=True)
 
     def __str__(self):
             return f'{self.id}, {self.Country}'
@@ -12,17 +12,16 @@ class country_id(models.Model):
 
 class Global_tem(models.Model):
     id = models.BigAutoField(primary_key=True)
-    Country = models.ForeignKey('climate_change.country_id',on_delete=models.CASCADE, related_name='Global_tem')
+    country = models.ForeignKey('climate_change.country_id',on_delete=models.CASCADE, related_name='Global_tem')
     dt = models.TextField()
-    AverageTemperature = models.TextField()
-    AverageTemperatureUncertainty = models.TextField()
-    City = models.TextField()
-    Latitude = models.TextField()
-    Longitude = models.TextField()
+    averageTemperature = models.TextField()
+    averageTemperatureUncertainty = models.TextField()
+    city = models.TextField()
+    latitude = models.TextField()
+    longitude = models.TextField()
 
     def __str__(self):
-            return f'{self.id}, {self.Country}, {self.dt},{self.AverageTemperature},{self.AverageTemperatureUncertainty},{self.City},{self.Latitude},{self.Longitude}'
-
+            return f'{self.id}, {self.country}, {self.dt},{self.averageTemperature},{self.averageTemperatureUncertainty},{self.city},{self.latitude},{self.longitude}'
 
 
 
