@@ -13,25 +13,26 @@ class Command(BaseCommand):
 
         # drop the data from the table so that if we rerun the file, we don't repeat values
         country_id.objects.all().delete()
+        Global_tem.objects.all().delete()
         print("table dropped successfully")
         # create table again
 
         # open the file to read it into the database
         base_dir = Path(__file__).resolve().parent.parent.parent.parent
-        # with open(str(base_dir) + '/climate_change/database/countryandid.csv', newline='') as f:
-        #     reader = csv.reader(f, delimiter=",")
-        #     next(reader) # skip the header line
-        #     for row in reader:
-        #         print(row)
+        with open(str(base_dir) + '/climate_change/database/countryandid.csv', newline='') as f:
+            reader = csv.reader(f, delimiter=",")
+            next(reader) # skip the header line
+            for row in reader:
+                print(row)
 
-        #         country = country_id.objects.create(
-        #             id=int(row[0]),
-        #             country=row[1],
-        #         )
-        #         country.save()
+                country = country_id.objects.create(
+                    id=int(row[0]),
+                    country=row[1],
+                )
+                country.save()
 
-        #     #else:
-        #         #next(reader)
+            #else:
+                #next(reader)
 
         
         # Global_tem.objects.all().delete()
@@ -45,9 +46,10 @@ class Command(BaseCommand):
 
                 
                 if row[5] is not '' :
+                    con= country_id.objects.filter(country=row[5]).first()
                     global_tem = Global_tem.objects.create(
                         id = int(row[0]),
-                        country = country_id.objects.filter(country=row[5]).first(),
+                        country = con,
                         dt=row[1],
                         averageTemperature=row[2],
                         averageTemperatureUncertainty=row[3],
