@@ -24,6 +24,17 @@ class Global_tem(models.Model):
             return f'{self.id}, {self.country}, {self.dt},{self.averageTemperature},{self.averageTemperatureUncertainty},{self.city},{self.latitude},{self.longitude}'
 
 
-
+class Globaltem_change(models.Model):
+    dt = models.TextField()
+    landAverageTemperature = models.FloatField()
+    landAverageTemperatureUncertainty = models.FloatField()
+    landMaxTemperature = models.FloatField()
+    landMaxTemperatureUncertainty = models.FloatField()
+    landMinTemperature = models.FloatField()
+    landMinTemperatureUncertainty = models.FloatField()
+    landAndOceanAverageTemperature = models.FloatField()
+    landAndOceanAverageTemperatureUncertainty = models.FloatField()
+    def __str__(self):
+            return f'{self.dt}, {self.landAverageTemperature},{self.landAverageTemperatureUncertainty},{self.landMaxTemperature},{self.landMaxTemperatureUncertainty},{self.landMinTemperature},{self.landMinTemperatureUncertainty},{self.landAndOceanAverageTemperature},{self.landAndOceanAverageTemperatureUncertainty}'
 
 

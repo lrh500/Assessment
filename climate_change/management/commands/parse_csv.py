@@ -4,7 +4,7 @@ from pathlib import Path
 from django.db import models
 from django.core.management.base import BaseCommand, CommandError
 
-from climate_change.models import country_id, Global_tem
+from climate_change.models import country_id, Global_tem,Globaltem_change
 
 
 class Command(BaseCommand):
@@ -15,11 +15,14 @@ class Command(BaseCommand):
         # drop the data from the table so that if we rerun the file, we don't repeat values
         country_id.objects.all().delete()
         Global_tem.objects.all().delete()
+        Globaltem_change.objects.all().delete()
         print("table dropped successfully")
         # create table again
 
         # open the file to read it into the database
+
         base_dir = Path(__file__).resolve().parent.parent.parent.parent
+
         with open(str(base_dir) + '/climate_change/database/countryandid.csv', newline='') as f:
             reader = csv.reader(f, delimiter=",")
             next(reader)  # skip the header line
@@ -57,11 +60,30 @@ class Command(BaseCommand):
                         latitude=row[6],
                         longitude=row[7],
                     )
-
                     # Save the Global_tem object to the database
                     global_tem.save()
-
                 else:
                     next(reader)
+
+        with open(str(base_dir) + '/climate_change/database/GlobalTemperatures.csv', newline='') as f:
+            reader = csv.reader(f, delimiter=",")
+            next(reader)  # skip the header line
+            for row in reader:
+                print(row)
+
+                globaltem_change = Globaltem_change.objects.create(
+                    dt=row[0],
+                    landAverageTemperature=row[1],
+                    landAverageTemperatureUncertainty = row[2],
+                    landMaxTemperature = row[3],
+                    landMaxTemperatureUncertainty = row[4],
+                    landMinTemperature = row[5],
+                    landMinTemperatureUncertainty = row[6],
+                    landAndOceanAverageTemperature = row[7],
+                    landAndOceanAverageTemperatureUncertainty = row[8],
+                )
+                globaltem_change.save()
+
+
 
             print("data parsed successfully")
