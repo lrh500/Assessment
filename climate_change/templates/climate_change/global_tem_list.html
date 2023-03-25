@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+  <div style="text-align: center;">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Country</th>
+          <th>Date</th>
+          <th>Average Temperature</th>
+          <th>Temperature Uncertainty</th>
+          <th>City</th>
+          <th>Latitude</th>
+          <th>Longitude</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for tem in global_tem %}
+          <tr>
+            <td>{{ tem.id }}</td>
+            <td>{{ tem.country.country }}</td>
+            <td>{{ tem.dt }}</td>
+            <td>{{ tem.averageTemperature }}</td>
+            <td>{{ tem.averageTemperatureUncertainty }}</td>
+            <td>{{ tem.city }}</td>
+            <td>{{ tem.latitude }}</td>
+            <td>{{ tem.longitude }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}
+
+
+</body>
+</html>

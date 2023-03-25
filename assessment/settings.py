@@ -12,9 +12,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-n_q_u$rktyr@_7tt&2m(@2#4#3l!)epyj0j3t2@*304*t=-4_5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','conductamadeus-zebracontrol-8000.codio-box.uk','balletsabine-antonioaloha-8000.codio-box.uk']
-
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'conductamadeus-zebracontrol-8000.codio-box.uk',
+                 'balletsabine-antonioaloha-8000.codio-box.uk']
 
 # Application definition
 
@@ -70,7 +70,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'assessment.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
@@ -80,7 +79,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -100,7 +98,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
@@ -113,7 +110,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/

@@ -4,7 +4,8 @@ from pathlib import Path
 from django.db import models
 from django.core.management.base import BaseCommand, CommandError
 
-from climate_change.models import country_id,Global_tem
+from climate_change.models import country_id, Global_tem
+
 
 class Command(BaseCommand):
     help = 'Load data from csv'
@@ -21,7 +22,7 @@ class Command(BaseCommand):
         base_dir = Path(__file__).resolve().parent.parent.parent.parent
         with open(str(base_dir) + '/climate_change/database/countryandid.csv', newline='') as f:
             reader = csv.reader(f, delimiter=",")
-            next(reader) # skip the header line
+            next(reader)  # skip the header line
             for row in reader:
                 print(row)
 
@@ -31,40 +32,36 @@ class Command(BaseCommand):
                 )
                 country.save()
 
-            #else:
-                #next(reader)
+            # else:
+            # next(reader)
 
-        
         # Global_tem.objects.all().delete()
         # print("table dropped successfully")
 
-        with open(str(base_dir) + '/climate_change/database/GlobalLandTemperaturesByCity.csv', newline='') as f:        
+        with open(str(base_dir) + '/climate_change/database/GlobalLandTemperaturesByCity.csv', newline='') as f:
             reader = csv.reader(f, delimiter=",")
-            next(reader) # skip the header line
+            next(reader)  # skip the header line
             for row in reader:
-                print(row)   
+                print(row)
 
-                
-                if row[5] is not '' :
-                    con= country_id.objects.filter(country=row[5]).first()
+                if row[5] is not '':
+                    con = country_id.objects.filter(country=row[5]).first()
                     global_tem = Global_tem.objects.create(
-                        id = int(row[0]),
-                        country = con,
+                        id=int(row[0]),
+                        country=con,
                         dt=row[1],
                         averageTemperature=row[2],
                         averageTemperatureUncertainty=row[3],
                         city=row[4],
-                        #country_id = countryname,
+                        # country_id = countryname,
                         latitude=row[6],
                         longitude=row[7],
-                        )
+                    )
 
                     # Save the Global_tem object to the database
                     global_tem.save()
-            
+
                 else:
                     next(reader)
-
-
 
             print("data parsed successfully")
