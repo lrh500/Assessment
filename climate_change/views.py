@@ -3,6 +3,10 @@ from .models import country_id, Global_tem, Globaltem_change
 
 
 # Create your views here.
+def index(request):
+    return render(request, 'climate_change/index.html')
+
+
 def country_list(request):
     countries = country_id.objects.all()
     headers = ['id', 'Country']
