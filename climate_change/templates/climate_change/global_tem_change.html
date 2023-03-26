@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>global_tem_change.html</title>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Land Average Temperature</th>
+      <th>Land Average Temperature Uncertainty</th>
+      <th>Land Max Temperature</th>
+      <th>Land Max Temperature Uncertainty</th>
+      <th>Land Min Temperature</th>
+      <th>Land Min Temperature Uncertainty</th>
+      <th>Land and Ocean Average Temperature</th>
+      <th>Land and Ocean Average Temperature Uncertainty</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for global_tem_change in global_tem_changes %}
+      <tr>
+        <td>{{ global_tem_change.dt }}</td>
+        <td>{{ global_tem_change.landAverageTemperature }}</td>
+        <td>{{ global_tem_change.landAverageTemperatureUncertainty }}</td>
+        <td>{{ global_tem_change.landMaxTemperature }}</td>
+        <td>{{ global_tem_change.landMaxTemperatureUncertainty }}</td>
+        <td>{{ global_tem_change.landMinTemperature }}</td>
+        <td>{{ global_tem_change.landMinTemperatureUncertainty }}</td>
+        <td>{{ global_tem_change.landAndOceanAverageTemperature }}</td>
+        <td>{{ global_tem_change.landAndOceanAverageTemperatureUncertainty }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+
+</body>
+</html>

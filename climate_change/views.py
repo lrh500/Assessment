@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import country_id, Global_tem
+from .models import country_id, Global_tem, Globaltem_change
 
 
 # Create your views here.
@@ -9,6 +9,12 @@ def country_list(request):
     data = [[country_id.id, country_id.country] for country_id in countries]
     return render(request, 'climate_change/country_list.html', {'headers': headers, 'data': data})
 
+
 def global_tem_list(request):
     global_tem = Global_tem.objects.all()
     return render(request, 'climate_change/global_tem_list.html', {'global_tem': global_tem})
+
+
+def global_tem_change_view(request):
+    global_tem_changes = Globaltem_change.objects.all()
+    return render(request, 'climate_change/global_tem_change.html', {'global_tem_changes': global_tem_changes})
