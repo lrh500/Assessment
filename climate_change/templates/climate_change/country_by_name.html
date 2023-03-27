@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Country List</title>
+    <style>
+      table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			padding: 8px;
+			text-align: center;
+		}
+		th {
+			background-color: #ddd;
+		}
+		tr:nth-child(even){background-color: #f2f2f2}
+    </style>
+    <title>Country List</title>
+</head>
+<body>
+    <div>
+    <table>
+  <thead>
+    <tr>
+          <th>ID</th>
+          <th>Country</th>
+          <th>Date</th>
+          <th>Average Temperature</th>
+          <th>Temperature Uncertainty</th>
+          <th>City</th>
+          <th>Latitude</th>
+          <th>Longitude</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in cities %}
+      <tr>
+            <td>{{ row.id }}</td>
+            <td>{{ row.country.country }}</td>
+            <td>{{ row.dt }}</td>
+            <td>{{ row.averageTemperature }}</td>
+            <td>{{ row.averageTemperatureUncertainty }}</td>
+            <td>{{ row.city }}</td>
+            <td>{{ row.latitude }}</td>
+            <td>{{ row.longitude }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+  </table>
+    </div>    
+</body>
+</html>

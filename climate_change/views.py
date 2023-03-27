@@ -22,3 +22,7 @@ def global_tem_list(request):
 def global_tem_change_view(request):
     global_tem_changes = Globaltem_change.objects.all()
     return render(request, 'climate_change/global_tem_change.html', {'global_tem_changes': global_tem_changes})
+
+def country_by_name(request,value):
+    cities=Global_tem.objects.filter(country=value)
+    return render(request, 'climate_change/country_by_name.html', {'cities': cities})

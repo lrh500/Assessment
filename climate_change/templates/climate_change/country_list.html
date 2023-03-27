@@ -34,8 +34,8 @@
           <tbody>
             {% for row in data %}
               <tr>
-                {% for value in row %}
-                    <td><a href=" "> {{value}} </a></td>
+                {% for cities in row %}
+                    <td><a href="country_by_name/{{cities}}" > {{cities}} </a></td>
                 {% endfor %}
               </tr>
             {% endfor %}
