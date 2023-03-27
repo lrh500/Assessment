@@ -24,9 +24,9 @@
     <table>
   <thead>
     <tr>
+          <th>Date</th>
           <th>ID</th>
           <th>Country</th>
-          <th>Date</th>
           <th>Average Temperature</th>
           <th>Temperature Uncertainty</th>
           <th>City</th>
@@ -35,11 +35,11 @@
     </tr>
   </thead>
   <tbody>
-    {% for row in cities %}
+    {% for row in dates %}
       <tr>
+            <td>{{ row.dt }}</td>
             <td>{{ row.id }}</td>
             <td>{{ row.country.country }}</td>
-            <td><b><a href='/check_by_date/{{row.dt}}'>{{ row.dt }}</a></b></td>
             <td>{{ row.averageTemperature }}</td>
             <td>{{ row.averageTemperatureUncertainty }}</td>
             <td>{{ row.city }}</td>

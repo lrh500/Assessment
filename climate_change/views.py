@@ -26,3 +26,7 @@ def global_tem_change_view(request):
 def country_by_name(request,value):
     cities=Global_tem.objects.filter(country=value)
     return render(request, 'climate_change/country_by_name.html', {'cities': cities})
+
+def check_by_date(request,date):
+    dates=Global_tem.objects.filter(dt=date)
+    return render(request,'climate_change/check_by_date.html',{'dates':dates})
