@@ -1,47 +1,116 @@
+{{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Country List</title>
-    <style>
-      table {
-			border-collapse: collapse;
-			width: 100%;
-		}
-		th, td {
-			padding: 8px;
-			text-align: center;
-		}
-		th {
-			background-color: #ddd;
-		}
-		tr:nth-child(even){background-color: #f2f2f2}
-    </style>
-    <title>Country List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<title>Country List</title>
+<style>
+    body {
+        background-image: url("{% static 'preview.jpg' %}");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #title {
+      margin-top: 80px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 10px;
+      border-radius: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      width: 20%;
+      border: 1px solid black;
+    }
+    #table-container {
+        width: 80%;
+        margin: 50px auto 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid black;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: #ddd;
+    }
+    tr:nth-child(even){
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    tr:nth-child(odd){
+      background-color: rgba(255, 255, 255, 0);
+    }
+    #map-container iframe {
+    border-radius: 100px !important;
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+</style>
 </head>
 <body>
-    <div>
-      {% block content %}
-        <h1>Country List</h1>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">My Aberdeen</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="country_list">Country</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="global_tem_changes">datadetail</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <div id="title">
+    <h1>Country List</h1>
+</div>
+
+<div id="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13963.537635424864!2d-122.4312977!3d37.785026999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDU2JzA5LjAiTiAxMjLCsDQzJzI4LjgiVw!5e0!3m2!1sen!2sus!4v1617119320197!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+    <div id="table-container">
+        {% block content %}
+
         <table>
-          <thead>
+            <thead>
             <tr>
-              {% for header in headers %}
+                {% for header in headers %}
                 <th>{{ header }}</th>
-              {% endfor %}
-            </tr>
-          </thead>
-          <tbody>
-            {% for row in data %}
-              <tr>
-                {% for cities in row %}
-                    <td><a href="country_by_name/{{cities}}" > {{cities}} </a></td>
                 {% endfor %}
-              </tr>
+            </tr>
+            </thead>
+            <tbody>
+            {% for row in data %}
+            <tr>
+                {% for cities in row %}
+                <td><a href="country_by_name/{{cities}}" > {{cities}} </a></td>
+                {% endfor %}
+            </tr>
             {% endfor %}
-          </tbody>
+            </tbody>
         </table>
-      {% endblock %}
+        {% endblock %}
+
     </div>
 </body>
 </html>
