@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,21 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <title>Country List</title>
     <style>
+      body {
+        background-image: url("{% static 'preview.jpg' %}");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment:fixed;
+      }
+      .table-container {
+          margin-top: 100px;
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 20px;
+          background-color: rgba(255, 255, 255, 0.8);
+          padding: 20px;
+        }
       table {
 			border-collapse: collapse;
 			width: 100%;
@@ -41,6 +57,7 @@
       </ul>
     </div>
   </nav>
+    <div class="table-container">
     <div>
     <table>
   <thead>
@@ -70,6 +87,7 @@
     {% endfor %}
   </tbody>
   </table>
-    </div>    
+    </div>
+        </div>
 </body>
 </html>

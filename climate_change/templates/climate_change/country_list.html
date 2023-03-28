@@ -1,4 +1,4 @@
-{{% load static %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +11,8 @@
     body {
         background-image: url("{% static 'preview.jpg' %}");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
+        background-attachment:fixed;
     }
     #title {
       margin-top: 80px;
