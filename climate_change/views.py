@@ -27,9 +27,24 @@ def global_tem_change_view(request):
 # def country_name(request):
 
 
-def country_by_name(request,value):
-    cities=Global_tem.objects.filter(country=value)
-    return render(request, 'climate_change/country_by_name.html', {'cities': cities})
+def country_by_name(request, value):
+    cities = Global_tem.objects.filter(country=value)
+    city = cities.first()
+    if city.latitude.endswith('N'):
+        cities_lat = float(city.latitude[:-1])
+    else:
+        cities_lat = -float(city.latitude[:-1])
+    if city.longitude.endswith('E'):
+        cities_lng = float(city.longitude[:-1])
+    else:
+        cities_lng = -float(city.longitude[:-1])
+    context = {
+        'cities': cities,
+        'cities_lat': cities_lat,
+        'cities_lng': cities_lng,
+    }
+    return render(request, 'climate_change/country_by_name.html', context)
+
 
 def check_by_date(request,date):
     dates=Global_tem.objects.filter(dt=date)
