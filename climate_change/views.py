@@ -43,7 +43,7 @@ def country_by_name(request, value):
 
     x_data = [city.dt for city in cities]
     y_data = [city.averageTemperature for city in cities]
-    trace = go.Scatter(x=x_data, y=y_data, mode='lines')
+    trace = go.Scatter(x=x_data, y=y_data, mode='markers')
     data = [trace]
     layout = go.Layout(title='Average Temperature by Date in ' + value, xaxis=dict(title='Date'), yaxis=dict(title='Average Temperature'))
     fig = go.Figure(data=data, layout=layout)

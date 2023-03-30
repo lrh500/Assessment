@@ -89,7 +89,6 @@
     <table>
   <thead>
     <tr>
-          <th>ID</th>
           <th>Country</th>
           <th>Date</th>
           <th>Average Temperature</th>
@@ -102,7 +101,6 @@
   <tbody>
     {% for row in cities %}
       <tr>
-            <td>{{ row.id }}</td>
             <td>{{ row.country.country }}</td>
             <td><b><a href='/check_by_date/{{row.dt}}'>{{ row.dt }}</a></b></td>
             <td>{{ row.averageTemperature }}</td>

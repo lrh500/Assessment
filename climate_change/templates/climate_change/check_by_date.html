@@ -66,7 +66,6 @@
   <thead>
     <tr>
           <th>Date</th>
-          <th>ID</th>
           <th>Country</th>
           <th>Average Temperature</th>
           <th>Temperature Uncertainty</th>
@@ -79,7 +78,6 @@
     {% for row in dates %}
       <tr>
             <td>{{ row.dt }}</td>
-            <td>{{ row.id }}</td>
             <td>{{ row.country.country }}</td>
             <td>{{ row.averageTemperature }}</td>
             <td>{{ row.averageTemperatureUncertainty }}</td>
