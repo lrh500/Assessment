@@ -1,4 +1,4 @@
-# Parsing Polar GlobalLandTemperaturesByCity  Data with Python and Django
+# Parsing GlobalLandTemperaturesByCity  Data with Python and Django
 
 **This is a web application for accessing users to analyse their work related issues using visualisation tools. The application allows users to view the temperature of each city and its details, and to analyse their information using tools such as maps.
 The application is built using Python and Django and uses django's own database to store the information. The front end was also designed using Djang.**
