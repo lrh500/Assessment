@@ -99,7 +99,7 @@
     </tr>
   </thead>
   <tbody>
-    {% for row in cities %}
+    {% for row in cities_noorder %}
       <tr>
             <td>{{ row.country.country }}</td>
             <td><b><a href='/check_by_date/{{row.dt}}'>{{ row.dt }}</a></b></td>
