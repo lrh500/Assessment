@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import country_id, Global_tem, Globaltem_change
+import plotly.graph_objs as go
+from plotly.offline import plot
 
 
 # Create your views here.
@@ -38,10 +40,19 @@ def country_by_name(request, value):
         cities_lng = float(city.longitude[:-1])
     else:
         cities_lng = -float(city.longitude[:-1])
+
+    x_data = [city.dt for city in cities]
+    y_data = [city.averageTemperature for city in cities]
+    trace = go.Scatter(x=x_data, y=y_data, mode='lines')
+    data = [trace]
+    layout = go.Layout(title='Average Temperature by Date in ' + value, xaxis=dict(title='Date'), yaxis=dict(title='Average Temperature'))
+    fig = go.Figure(data=data, layout=layout)
+    div = fig.to_html(full_html=False)
     context = {
         'cities': cities,
         'cities_lat': cities_lat,
         'cities_lng': cities_lng,
+        'plot_div': div,
     }
     return render(request, 'climate_change/country_by_name.html', context)
 

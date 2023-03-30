@@ -83,6 +83,9 @@
     });
     var marker = L.marker([{{ cities_lat }}, {{cities_lng }}], {icon: taggingIcon }).addTo(mymap);
 </script>
+    <div>
+        {{ plot_div|safe }}
+    </div>
     <table>
   <thead>
     <tr>
