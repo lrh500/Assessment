@@ -28,7 +28,7 @@ def global_tem_change_view(request):
 
 
 def country_by_name(request, value):
-    cities = Global_tem.objects.filter(country=value)
+    cities = Global_tem.objects.filter(country=value).exclude(averageTemperature='').exclude(averageTemperature=None)
     city = cities.first()
     if city.latitude.endswith('N'):
         cities_lat = float(city.latitude[:-1])
