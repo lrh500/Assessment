@@ -92,24 +92,23 @@
     <div id="table-container">
         {% block content %}
 
-        <table>
-            <thead>
-            <tr>
-                {% for header in headers %}
-                <th>{{ header }}</th>
-                {% endfor %}
-            </tr>
-            </thead>
-            <tbody>
-            {% for row in data %}
-            <tr>
-                {% for cities in row %}
-                <td><a href="/country_by_name/{{cities}}" > {{cities}} </a></td>
-                {% endfor %}
-            </tr>
-            {% endfor %}
-            </tbody>
-        </table>
+<table>
+  <thead>
+    <tr>
+          <th>ID</th>
+          <th>Country</th>
+
+  </tr>
+  </thead>
+  <tbody>
+    {% for row in countries %}
+      <tr>
+            <td>{{ row.id }}</td>
+            <td><a href="/country_by_name/{{row.country}}" > {{row.country}} </a></td>
+      </tr>
+    {% endfor %}
+  </tbody>
+  </table>
         {% endblock %}
 
     </div>

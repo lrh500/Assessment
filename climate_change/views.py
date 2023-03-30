@@ -11,9 +11,9 @@ def index(request):
 
 def country_list(request):
     countries = country_id.objects.all()
-    headers = ['id', 'Country']
-    data = [[country_id.id, country_id.country] for country_id in countries]
-    return render(request, 'climate_change/country_list.html', {'headers': headers, 'data': data})
+    # headers = ['id', 'Country']
+    # data = [[country_id.id, country_id.country] for country_id in countries]
+    return render(request, 'climate_change/country_list.html', {'countries':countries})
 
 
 def global_tem_list(request):
