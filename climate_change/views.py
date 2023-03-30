@@ -58,5 +58,16 @@ def country_by_name(request, value):
 
 
 def check_by_date(request,date):
-    dates=Global_tem.objects.filter(dt=date)
-    return render(request,'climate_change/check_by_date.html',{'dates':dates})
+    dates = Global_tem.objects.filter(dt=date).exclude(averageTemperature='').exclude(averageTemperature=None)
+    x_data = [date.country.country for date in dates]
+    y_data = [date.averageTemperature for date in dates]
+    trace = go.Scatter(x=x_data, y=y_data, mode='markers')
+    data = [trace]
+    layout = go.Layout(title='Average Temperature by Country in ' + date, xaxis=dict(title='Country'), yaxis=dict(title='Average Temperature'))
+    fig = go.Figure(data=data, layout=layout)
+    div = fig.to_html(full_html=False)
+    context = {
+        'dates': dates,
+        'plot_div': div,
+    }
+    return render(request,'climate_change/check_by_date.html',context)
