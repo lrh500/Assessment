@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-n_q_u$rktyr@_7tt&2m(@2#4#3l!)epyj0j3t2@*304*t=-4_5
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'conductamadeus-zebracontrol-8000.codio-box.uk',
-                 'balletsabine-antonioaloha-8000.codio-box.uk']
+                 'balletsabine-antonioaloha-8000.codio-box.uk','assessment-odbh.onrender.com']
 
 # Application definition
 
