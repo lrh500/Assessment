@@ -14,7 +14,7 @@ Step 1) we use Django's Command module, which allows us to parse CSV files and c
 
 *Then, the global_tem_change.html file contains a table for displaying climate change data. The table header includes various climate indicators, such as average temperature and temperature fluctuation range. In the table body, the for loop in Django's template language is used to iterate over the values of each climate indicator, displaying the date and numerical values of different indicators for each row of data. This HTML file can be used by Django for dynamically rendering data and presenting it to users.*
 
-###Installation
+### Installation
 Clone or download the project code at：
 
     https://github.com/lrh500/Assessment.git
@@ -42,7 +42,7 @@ We need to specify some settings for the website, which we do in the assessment/
 	ALLOWED_HOSTS = ['word-otherword.herokuapp.com', 'localhost']
 	python3 manage.py migrate
 
-###Start the server
+### Start the server
 
 We use the manage.py command tool by typing this command in the terminal:
 
@@ -51,10 +51,10 @@ If you are doing this on another platform, then you may need to change it (chang
 
     python3 manage.py runserver 0.0.0.0:8000
 
-###Create view
+### Create view
 We can now create a view of our data so that we can see temperatures for all cities, a map that locates a city and shows sixty months of temperature data, select a country to show the average temperature for that country and show the average temperature change as a line graph, we have a detail table that shows the maximum and minimum temperatures at ground level and uncertainty values, and we have created a navigation bar to jump back.
 
-###Using tests
+### Using tests
 Here are also some basic tests so that you can see how to test whether your code is working properly. They are located in the "Tests" folder and cover model and view tests. There is some repetitive code to load the test database, which can be refactored into a separate file for test file calls. Use the following command to run the tests:
 
     python3 manage.py test
