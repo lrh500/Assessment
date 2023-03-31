@@ -1,0 +1,67 @@
+cbfda30	lrh500	Fri Mar 31 09:52:49 2023	Update README.md
+a72e85a	RUIHAO LIU	Fri Mar 31 09:51:01 2023	add the log.txt
+ba66b79	lrh500	Fri Mar 31 09:46:58 2023	Update README.md
+597d080	pengchengxu1	Thu Mar 30 23:26:39 2023	Update README.md
+10dbf65	pengchengxu1	Thu Mar 30 23:24:39 2023	Update README.md
+b171ce0	pengchengxu1	Thu Mar 30 14:10:24 2023	Update README.md
+6976483	RUIHAO LIU	Thu Mar 30 13:51:21 2023	upgrate the requirements
+ba2c691	RUIHAO LIU	Thu Mar 30 13:49:44 2023	upgrate the requirements
+a600773	RUIHAO LIU	Thu Mar 30 13:47:59 2023	upgrate the requirements
+43481e9	RUIHAO LIU	Thu Mar 30 13:47:40 2023	upgrate the requirements
+78632ac	RUIHAO LIU	Thu Mar 30 13:30:56 2023	change the static root
+51004ba	RUIHAO LIU	Thu Mar 30 12:56:09 2023	the collection of static
+559734c	RUIHAO LIU	Thu Mar 30 12:45:55 2023	change the root of static
+eba85df	RUIHAO LIU	Thu Mar 30 12:44:09 2023	change the root of  static immages
+d23416b	RUIHAO LIU	Thu Mar 30 12:40:13 2023	change the root of  static immages
+5c29b90	RUIHAO LIU	Thu Mar 30 12:25:07 2023	delete the ignore of sqlite doc
+abe58df	RUIHAO LIU	Thu Mar 30 12:15:35 2023	add the host that allows the render deployment
+e70973f	rz871256465	Thu Mar 30 09:56:11 2023	change requirement
+9044e8f	rz871256465	Thu Mar 30 09:49:54 2023	change requirement
+c9f08ec	rz871256465	Thu Mar 30 09:39:38 2023	change requirement change gunicorn
+4574940	rz871256465	Thu Mar 30 09:20:19 2023	delete pandas
+a25787c	rz871256465	Thu Mar 30 09:18:55 2023	change requirement delete numpy
+20a9fd6	rz871256465	Thu Mar 30 09:17:13 2023	change requirement delete django
+357bc2e	rz871256465	Thu Mar 30 09:13:27 2023	change requirement
+c5c60d3	rz871256465	Thu Mar 30 09:00:02 2023	add a requirement
+a244f6e	RUIHAO LIU	Thu Mar 30 08:14:23 2023	change the index link of URL
+9ecf2f3	RUIHAO LIU	Thu Mar 30 07:29:01 2023	fix the bug of datatype error
+78061c8	RUIHAO LIU	Thu Mar 30 06:37:42 2023	fix the error from country_list.html
+dc64b0c	RUIHAO LIU	Thu Mar 30 06:17:18 2023	change some settings
+2e6f2bd	RUIHAO LIU	Thu Mar 30 06:13:44 2023	add the visual chart for every point of time
+d7e30f2	RUIHAO LIU	Thu Mar 30 05:57:46 2023	add the visualize lines chart for average temperature of each country
+6aa383a	RUIHAO LIU	Thu Mar 30 05:28:25 2023	drop the apperance of all the NULL data of average Temprature
+71d1d2d	RUIHAO LIU	Thu Mar 30 05:16:01 2023	add the map for the location of every country that be checked by customer
+5f32102	RUIHAO LIU	Thu Mar 30 04:03:18 2023	fix a bug for url settings
+0bd7c0c	QINGYANG ZENG	Wed Mar 29 11:16:02 2023	tests.py change
+91db51d	rz871256465	Tue Mar 28 16:07:25 2023	change link about all html
+b16aaf1	rz871256465	Tue Mar 28 08:54:59 2023	change all html style
+7d8b5fb	rz871256465	Tue Mar 28 01:45:52 2023	design country_list.html
+1802233	RUIHAO LIU	Mon Mar 27 13:47:14 2023	add date table which linked with temperature of  all the countries in  the same  date
+1222dcb	RUIHAO LIU	Mon Mar 27 13:38:49 2023	add another table which relates with the all the countries in same days
+4a44790	OscarSoleye	Mon Mar 27 12:41:56 2023	Images are displaying in the index.html. a static root directory had to be added to the setting.py
+c3a4f71	OscarSoleye	Mon Mar 27 12:41:15 2023	Images are displaying in the index.html. a static root directory had to be added to the setting.py
+542ec41	OscarSoleye	Mon Mar 27 12:38:27 2023	Images are displaying in the index.html. a static root directory had to be added to the setting.py
+f52395a	OscarSoleye	Mon Mar 27 12:36:46 2023	Images are displaying in the index.html. a static root directory had to be added to the setting.py
+f8f1672	RUIHAO LIU	Mon Mar 27 11:28:11 2023	linked the table by views,urls and models, and change the relevant html
+b08fc92	OscarSoleye	Sun Mar 26 17:07:29 2023	url and view for index.html were created
+6649615	OscarSoleye	Sun Mar 26 16:48:35 2023	Created the global_tem_change.html file, added it to the urlpatterns and created an accompanying view.
+38f2ee8	rz871256465	Sun Mar 26 15:48:47 2023	add a index.html and img floder
+fe4b48f	rz871256465	Sat Mar 25 21:24:34 2023	add a new model,cerate a new class
+e45fddc	OscarSoleye	Sat Mar 25 15:08:47 2023	Created global_tem_list.html and the associating views.py and urls.py reference to it
+c54f897	OscarSoleye	Fri Mar 24 15:32:40 2023	Added the Django Tables2 library to help display the table in the views.py for assistance in displaying the tables
+366f8c8	RUIHAO LIU	Thu Mar 23 14:53:06 2023	change the data and fix the error of class
+9fc1e68	RUIHAO LIU	Thu Mar 23 13:57:21 2023	change the directory
+8e7e88a	QINGYANG ZENG	Thu Mar 23 13:43:55 2023	Merge branch 'main' of github.com:lrh500/Assessment into main
+0c454a7	QINGYANG ZENG	Thu Mar 23 13:42:10 2023	change
+35b8ef5	rz871256465	Thu Mar 23 09:45:55 2023	change
+8c1f910	rz871256465	Thu Mar 23 09:28:29 2023	change data
+a0a3174	rz871256465	Tue Mar 21 21:27:49 2023	change
+4c31dfc	rz871256465	Tue Mar 21 20:49:11 2023	change
+307d41f	rz871256465	Tue Mar 21 20:17:41 2023	change
+8f73c1e	rz871256465	Tue Mar 21 20:12:02 2023	test
+25d2e3c	rz871256465	Tue Mar 21 16:52:57 2023	test
+ec5db5b	rz871256465	Tue Mar 21 16:49:01 2023	change some data" git commit -m =change some data
+1e2ffd2	rz871256465	Tue Mar 21 16:46:45 2023	add
+dd9e046	RUI ZHU	Tue Mar 21 15:45:18 2023	all file
+995dc21	RUIHAO LIU	Mon Mar 20 15:22:31 2023	Deploy the framework of the Django
+84215f2	lrh500	Mon Mar 20 15:05:31 2023	Initial commit
