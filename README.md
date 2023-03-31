@@ -43,7 +43,13 @@ We need to specify some settings for the website, which we do in the assessment/
     import os
 	STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 	ALLOWED_HOSTS = ['word-otherword.herokuapp.com', 'localhost']
+	
+After that, enter the following code in Terminal to perform data migration
+
 	python3 manage.py migrate
+	python3 manage.py makemigrations climate_change
+	python3 manage.py migrate climate_change
+	python3 manage.py parse_csv
 
 ### Start the server
 
