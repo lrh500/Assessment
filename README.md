@@ -18,6 +18,9 @@ Step 1) we use Django's Command module, which allows us to parse CSV files and c
 Clone or download the project code at：
 
     https://github.com/lrh500/Assessment.git
+    
+The depolyment of the project on：
+    https://assessment-odbh.onrender.com/
 
 To access the project catalogue:
 
