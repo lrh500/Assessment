@@ -32,6 +32,7 @@ Use the pyenv version manager to install and set the local version of Python to 
     python3 -m venv .venv # this creates the virtual environment for you
     source .venv/bin/activate # this activates the virtual environment
     pip install --upgrade pip [ this is optional]  # this installs pip, and upgrades it if required.
+    pip install -r requirements.txt
 
 We will be using Django ( https://www.djangoproject.com ) as the web framework for our application. We install it
 
