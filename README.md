@@ -24,7 +24,7 @@ The depolyment of the project on：
 
 To access the project catalogue:
 
-    cd Assessmenm
+    cd Assessment
 
 Use the pyenv version manager to install and set the local version of Python to 3.7.0.
 
