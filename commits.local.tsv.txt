@@ -1,3 +1,8 @@
+4741a84	RUIHAO LIU	Fri Mar 31 10:59:06 2023	Merge branch 'main' of github.com:lrh500/Assessment into main
+75a4f11	RUIHAO LIU	Fri Mar 31 10:58:50 2023	add the contribution form
+b06644e	rz871256465	Fri Mar 31 10:52:54 2023	Update README.md
+aa78749	rz871256465	Fri Mar 31 10:49:06 2023	Update README.md
+fc33335	RUIHAO LIU	Fri Mar 31 10:30:53 2023	change the report contents
 cbfda30	lrh500	Fri Mar 31 09:52:49 2023	Update README.md
 a72e85a	RUIHAO LIU	Fri Mar 31 09:51:01 2023	add the log.txt
 ba66b79	lrh500	Fri Mar 31 09:46:58 2023	Update README.md
