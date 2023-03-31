@@ -1,0 +1,404 @@
+commit ba66b7976ba5927ac747d1444d51c3d7f65093f0
+Author: lrh500 <125631230+lrh500@users.noreply.github.com>
+Date:   Fri Mar 31 10:46:58 2023 +0100
+
+    Update README.md
+
+commit 597d08035f774b550922ab58a0cddee9e5075d7a
+Author: pengchengxu1 <126722701+pengchengxu1@users.noreply.github.com>
+Date:   Fri Mar 31 00:26:39 2023 +0100
+
+    Update README.md
+
+commit 10dbf651a845a804fdd46f98ee55f6ed91965fb0
+Author: pengchengxu1 <126722701+pengchengxu1@users.noreply.github.com>
+Date:   Fri Mar 31 00:24:39 2023 +0100
+
+    Update README.md
+
+commit b171ce04063041c9ab077d1d7a2721d476deab20
+Author: pengchengxu1 <126722701+pengchengxu1@users.noreply.github.com>
+Date:   Thu Mar 30 15:10:24 2023 +0100
+
+    Update README.md
+
+commit 6976483650a5bc0510e437ce61079668a9f8d18d
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 13:51:21 2023 +0000
+
+    upgrate the requirements
+
+commit ba2c691f3e58f6f26e17f02804592f28d3255677
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 13:49:44 2023 +0000
+
+    upgrate the requirements
+
+commit a600773719e7014590553c17ba58af7774bd5c43
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 13:47:59 2023 +0000
+
+    upgrate the requirements
+
+commit 43481e96f44ed77ad13b9435c0bb5bd70560bbbb
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 13:47:40 2023 +0000
+
+    upgrate the requirements
+
+commit 78632ac96f4fb7568e5ceb3e57fb1067689dba05
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 13:30:56 2023 +0000
+
+    change the static root
+
+commit 51004ba3f89da9ee0306273cc7fcf900f7272056
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 12:56:09 2023 +0000
+
+    the collection of static
+
+commit 559734cb3ef88a2b06499d929142ede8b295e2e6
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 12:45:55 2023 +0000
+
+    change the root of static
+
+commit eba85dfb71018211d039d06a4afb658db382fb31
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 12:44:09 2023 +0000
+
+    change the root of  static immages
+
+commit d23416bddfe8d1d2e6d6ff84efbc03a6ed05e6e2
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 12:40:13 2023 +0000
+
+    change the root of  static immages
+
+commit 5c29b908000c3a6b9e083e6a3cedf838804383ab
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 12:25:07 2023 +0000
+
+    delete the ignore of sqlite doc
+
+commit abe58df2ad8c67a5a0f02b724d3d509271387911
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 12:15:35 2023 +0000
+
+    add the host that allows the render deployment
+
+commit e70973f5e2e92621d00a8efcadae083cb5bddb01
+Author: rz871256465 <871256465@qq.com>
+Date:   Thu Mar 30 10:56:11 2023 +0100
+
+    change requirement
+
+commit 9044e8f8a56c7f2517befd2e874f1c38e62a68ce
+Author: rz871256465 <871256465@qq.com>
+Date:   Thu Mar 30 10:49:54 2023 +0100
+
+    change requirement
+
+commit c9f08ecef0d19bc486a7c0a44a9e650cff8d6770
+Author: rz871256465 <871256465@qq.com>
+Date:   Thu Mar 30 10:39:38 2023 +0100
+
+    change requirement change gunicorn
+
+commit 457494074797135b1ea2262ebd9c86018da36331
+Author: rz871256465 <871256465@qq.com>
+Date:   Thu Mar 30 10:20:19 2023 +0100
+
+    delete pandas
+
+commit a25787c8423e9764b865a627282d2aa56b2d42fd
+Author: rz871256465 <871256465@qq.com>
+Date:   Thu Mar 30 10:18:55 2023 +0100
+
+    change requirement delete numpy
+
+commit 20a9fd6d0249d61445018cfafc51ac4fe490c9e7
+Author: rz871256465 <871256465@qq.com>
+Date:   Thu Mar 30 10:17:13 2023 +0100
+
+    change requirement delete django
+
+commit 357bc2e02da3b4495efa9d2728b7d16a83902e27
+Author: rz871256465 <871256465@qq.com>
+Date:   Thu Mar 30 10:13:27 2023 +0100
+
+    change requirement
+
+commit c5c60d3954176a50c7e9ba663970a21e2182c607
+Author: rz871256465 <871256465@qq.com>
+Date:   Thu Mar 30 10:00:02 2023 +0100
+
+    add a requirement
+
+commit a244f6ed83266817610a54ff1b525f534e20f2da
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 08:14:23 2023 +0000
+
+    change the index link of URL
+
+commit 9ecf2f377471c0bf1d5ba2c8b36e6101fd2c72ae
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 07:29:01 2023 +0000
+
+    fix the bug of datatype error
+
+commit 78061c87e94603065f0c845a2c6789424ce04a2c
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 06:37:42 2023 +0000
+
+    fix the error from country_list.html
+
+commit dc64b0c9187f57193a2d7118c69f66b630504877
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 06:17:18 2023 +0000
+
+    change some settings
+
+commit 2e6f2bd578ad9c5bff5b8c6f34f9bf2ef3dd95c3
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 06:13:44 2023 +0000
+
+    add the visual chart for every point of time
+
+commit d7e30f2801b5442c9da50de90c0e11ed7f540821
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 05:57:46 2023 +0000
+
+    add the visualize lines chart for average temperature of each country
+
+commit 6aa383a57148ade3d2a4d085753ee355e01a4558
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 05:28:25 2023 +0000
+
+    drop the apperance of all the NULL data of average Temprature
+
+commit 71d1d2dbded33b09072972fe97dc907bc0506cd0
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 05:16:01 2023 +0000
+
+    add the map for the location of every country that be checked by customer
+
+commit 5f3210200ec9752f57a29af71f7bb43f40173aca
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 30 04:03:18 2023 +0000
+
+    fix a bug for url settings
+
+commit 0bd7c0c60ddb13d9d85483597580382de7d6a3c0
+Author: QINGYANG ZENG <q.zeng.22@abdn.ac.uk>
+Date:   Wed Mar 29 11:16:02 2023 +0000
+
+    tests.py change
+
+commit 91db51d69256b29e3bbff401953b6bed25162784
+Author: rz871256465 <871256465@qq.com>
+Date:   Tue Mar 28 17:07:25 2023 +0100
+
+    change link about all html
+
+commit b16aaf1f0d2c014d1ccf195c04eef38f3cc091a4
+Author: rz871256465 <871256465@qq.com>
+Date:   Tue Mar 28 09:54:59 2023 +0100
+
+    change all html style
+
+commit 7d8b5fb18adea95da2bf36a7115d6ea7363a1626
+Author: rz871256465 <871256465@qq.com>
+Date:   Tue Mar 28 02:45:52 2023 +0100
+
+    design country_list.html
+
+commit 1802233929e935eda146e38ed20bb03860979101
+Merge: 1222dcb 4a44790
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Mon Mar 27 13:47:14 2023 +0000
+
+    add date table which linked with temperature of  all the countries in  the same  date
+
+commit 1222dcba097a837041e494dabadde24eb4a61bb1
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Mon Mar 27 13:38:49 2023 +0000
+
+    add another table which relates with the all the countries in same days
+
+commit 4a44790dfa6c2693e8a4a26269eee6962e29c6f7
+Author: OscarSoleye <clouddavinci@gmail.com>
+Date:   Mon Mar 27 13:41:56 2023 +0100
+
+    Images are displaying in the index.html. a static root directory had to be added to the setting.py
+
+commit c3a4f7183f22fe0361553741fa62ba80c364172f
+Author: OscarSoleye <clouddavinci@gmail.com>
+Date:   Mon Mar 27 13:41:15 2023 +0100
+
+    Images are displaying in the index.html. a static root directory had to be added to the setting.py
+
+commit 542ec41b31bf7d5fbf84a23556feae91859701b0
+Author: OscarSoleye <clouddavinci@gmail.com>
+Date:   Mon Mar 27 13:38:27 2023 +0100
+
+    Images are displaying in the index.html. a static root directory had to be added to the setting.py
+
+commit f52395ab49914c99364c862c10b823c7aaab2275
+Author: OscarSoleye <clouddavinci@gmail.com>
+Date:   Mon Mar 27 13:36:46 2023 +0100
+
+    Images are displaying in the index.html. a static root directory had to be added to the setting.py
+
+commit f8f16720ad545c14637ea28221e165fa79c01e66
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Mon Mar 27 11:28:11 2023 +0000
+
+    linked the table by views,urls and models, and change the relevant html
+
+commit b08fc92b72fbbede24d27989cea9c4eba76a3d1b
+Author: OscarSoleye <clouddavinci@gmail.com>
+Date:   Sun Mar 26 18:07:29 2023 +0100
+
+    url and view for index.html were created
+
+commit 6649615de4657d33fb5f6a41a6e70be55595c012
+Author: OscarSoleye <clouddavinci@gmail.com>
+Date:   Sun Mar 26 17:48:35 2023 +0100
+
+    Created the global_tem_change.html file, added it to the urlpatterns and created an accompanying view.
+
+commit 38f2ee85e151fd1bd0db84939a11b40c7f371747
+Author: rz871256465 <871256465@qq.com>
+Date:   Sun Mar 26 16:48:47 2023 +0100
+
+    add a index.html and img floder
+
+commit fe4b48f76e8530e83963df7d60dbd31b22202083
+Author: rz871256465 <871256465@qq.com>
+Date:   Sat Mar 25 21:24:34 2023 +0000
+
+    add a new model,cerate a new class
+
+commit e45fddcc4b0e9114b65a0cf2ee9d9aa0b0869d62
+Author: OscarSoleye <clouddavinci@gmail.com>
+Date:   Sat Mar 25 15:08:47 2023 +0000
+
+    Created global_tem_list.html and the associating views.py and urls.py reference to it
+
+commit c54f897ab009dddee4257513ad134c65c382f643
+Author: OscarSoleye <clouddavinci@gmail.com>
+Date:   Fri Mar 24 15:32:40 2023 +0000
+
+    Added the Django Tables2 library to help display the table in the views.py for assistance in displaying the tables
+    
+    Added the path climate_change.urls in assessment.urls.py
+    
+    Created urls.py in climate_change app folder where urlpatterns for country_list was created
+    
+    Created the templates folder holding the climate_change folder that holds html files
+    
+    country_list.html was created to display the table
+    
+    To fix the AutoIncrement error i deleted the data base and migrations and recreated them. I also changed django class from BigAutoField to IntegerField as BigAutoField automatically fills the data automatically. After doing this i was able to migrate successfully
+    
+    created country_list in the views folder as well
+
+commit 366f8c8b7d59291f1530cbf4c36c4a40d218ab89
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 23 14:53:06 2023 +0000
+
+    change the data and fix the error of class
+
+commit 9fc1e68f9be25a80762ab0f7008ce9d60febe941
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Thu Mar 23 13:57:21 2023 +0000
+
+    change the directory
+
+commit 8e7e88a70b5d0aa02599b3ceac89b4a358fbb57b
+Merge: 0c454a7 35b8ef5
+Author: QINGYANG ZENG <q.zeng.22@abdn.ac.uk>
+Date:   Thu Mar 23 13:43:55 2023 +0000
+
+    Merge branch 'main' of github.com:lrh500/Assessment into main
+
+commit 0c454a7227fbfc654c355f881f562998c48eb92e
+Author: QINGYANG ZENG <q.zeng.22@abdn.ac.uk>
+Date:   Thu Mar 23 13:42:10 2023 +0000
+
+    change
+
+commit 35b8ef511b7a88a73bf9cd8cb638a649d0918106
+Author: rz871256465 <871256465@qq.com>
+Date:   Thu Mar 23 09:45:55 2023 +0000
+
+    change
+
+commit 8c1f91012bdb798d3aada4b4d9d04736678eafd3
+Author: rz871256465 <871256465@qq.com>
+Date:   Thu Mar 23 09:28:29 2023 +0000
+
+    change data
+
+commit a0a317416f36d20e42977adbe5ba7dce6bdbeef3
+Author: rz871256465 <871256465@qq.com>
+Date:   Tue Mar 21 21:27:49 2023 +0000
+
+    change
+
+commit 4c31dfc3e90c807f14281f7d20e02cd4a348ddb3
+Author: rz871256465 <871256465@qq.com>
+Date:   Tue Mar 21 20:49:11 2023 +0000
+
+    change
+
+commit 307d41f488ab944d2b7a6ed3c837396a301dbb82
+Author: rz871256465 <871256465@qq.com>
+Date:   Tue Mar 21 20:17:41 2023 +0000
+
+    change
+
+commit 8f73c1e94c395291e10cf92868547c88a56ba272
+Author: rz871256465 <871256465@qq.com>
+Date:   Tue Mar 21 20:12:02 2023 +0000
+
+    test
+
+commit 25d2e3cfc41c5629156dec34f505d6b252e6b30d
+Author: rz871256465 <871256465@qq.com>
+Date:   Tue Mar 21 16:52:57 2023 +0000
+
+    test
+
+commit ec5db5b9e8605ec4bb8c627fc12098adb92af791
+Author: rz871256465 <871256465@qq.com>
+Date:   Tue Mar 21 16:49:01 2023 +0000
+
+    change some data"
+    git commit -m =change some data
+
+commit 1e2ffd2bf6e121ff512e4c4417178f1d76423fd0
+Author: rz871256465 <871256465@qq.com>
+Date:   Tue Mar 21 16:46:45 2023 +0000
+
+    add
+
+commit dd9e046e465b84c9d6615b7e536ee2d34b391db2
+Author: RUI ZHU <r.zhu.22@abdn.ac.uk>
+Date:   Tue Mar 21 15:45:18 2023 +0000
+
+    all file
+
+commit 995dc219dcae1efd4e4d82d7db934d70f43c4f66
+Author: RUIHAO LIU <r.liu.22@abdn.ac.uk>
+Date:   Mon Mar 20 15:22:31 2023 +0000
+
+    Deploy the framework of the Django
+
+commit 84215f2ac5a9e6efb0761db9465670110732261e
+Author: lrh500 <125631230+lrh500@users.noreply.github.com>
+Date:   Mon Mar 20 15:05:31 2023 +0000
+
+    Initial commit
